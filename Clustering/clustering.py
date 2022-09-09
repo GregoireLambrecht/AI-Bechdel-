@@ -56,10 +56,9 @@ def labelling_file(file):
     labelling_list = []
     for audio in audio_list:
         print(audio)
-        if int(audio[:-4]) <= 300:
-            audio_path = file + "/" + audio
-            labels, wav_splits = diarization_audio(audio_path)
-            labelling_list.append(create_labelling(labels,wav_splits))
+        audio_path = file + "/" + audio
+        labels, wav_splits = diarization_audio(audio_path)
+        labelling_list.append(create_labelling(labels,wav_splits))
     return labelling_list
 
 
