@@ -1,5 +1,5 @@
 from resemblyzer import preprocess_wav, VoiceEncoder
-from resemblyzer import sampling_rate
+from resemblyzer.audio import sampling_rate
 from pathlib import Path
 
 from spectralcluster import SpectralClusterer
