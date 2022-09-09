@@ -1,7 +1,6 @@
 from sklearn.decomposition import PCA
 
 from resemblyzer import preprocess_wav, VoiceEncoder
-from resemblyzer import sampling_rate
 from pathlib import Path
 
 from spectralcluster import SpectralClusterer
